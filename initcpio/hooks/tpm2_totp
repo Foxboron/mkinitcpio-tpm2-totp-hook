@@ -1,0 +1,8 @@
+#!/usr/bin/ash
+
+run_hook() {
+    printf "TPM2 TOTP token: "
+    tpm2-totp -t calculate 2>/dev/null
+}
+
+# vim: set ft=sh ts=4 sw=4 et:
